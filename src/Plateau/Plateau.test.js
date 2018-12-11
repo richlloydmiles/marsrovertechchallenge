@@ -58,4 +58,3 @@ describe('Plateau', function () {
     })
   })
 })
-

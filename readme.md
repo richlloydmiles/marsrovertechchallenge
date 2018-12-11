@@ -24,9 +24,6 @@ major ES6 / ES7 features - again with simplicity in mind.
 Having the tests and components in the same folder is a structure adopted from the redux ducks pattern
  - https://medium.com/@scbarrus/the-ducks-file-structure-for-redux-d63c41b7035c
  - https://github.com/erikras/ducks-modular-redux
- 
-I would usually try for 100% test coverage, however, I have avoided over testing (adding stubs / spies) as 
-I don't think it is needed for the purposes of the challenge.
 
 ###### Extra Features
 
@@ -46,3 +43,14 @@ however, 3 features were added that I think are small but significant enough to 
     When the Rover moves off the plateau I have added a notification - this serves not functional purpose 
     (but otherwise the plateau does not have any real use)
     
+###### Not included
+
+- 100% test coverage: I would usually try for 100% test coverage, however, I have avoided over testing (adding stubs / spies) as 
+I don't think it is needed for the purposes of the challenge.
+
+- Separation of concerns: Additionally I would usually separate the CLI input utility library 
+into its own module so that the app is agnostic of how data is inputted, 
+however, again I don't think this is completely necessary for the purposes of the challenge.
+
+- Error Handling: For the purposes of this challenge I assume that all user input is uncorrupted, as it was not
+specified otherwise. Any malformed inputted data will cause the CLI to break.
