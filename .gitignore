@@ -1,0 +1,10 @@
+# IDE
+.idea
+
+# dependencies
+/node_modules
+**/node_modules
+
+# system files
+.DS_Store
+*.swp

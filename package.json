@@ -1,0 +1,19 @@
+{
+  "name": "marsrovertechchallenge",
+  "version": "1.0.0",
+  "description": "Mars rover tech challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha \"src/**/*.test.js\"",
+    "start": "node index.js",
+    "lint": "eslint --ext .js --ignore-path .gitignore ."
+  },
+  "author": "Richard Miles",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0"
+  }
+}
