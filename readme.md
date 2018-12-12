@@ -4,7 +4,7 @@ https://code.google.com/archive/p/marsrovertechchallenge/
 
 #### Installation:
 
-- Make sure Node (npm) is installed (preferably the latest version)
+- Make sure Node (npm) is installed (at least v11.4.0 for https://nodejs.org/api/readline.html)
 - Run `npm install` to install all the dependencies
 
 - Run CLI with `npm run start`
@@ -40,17 +40,17 @@ however, 3 features were added that I think are small but significant enough to 
     This allows for more than 2 Rovers to be added.
 
 - Off the grid alerts:
-    When the Rover moves off the plateau I have added a notification - this serves not functional purpose 
+    When the Rover moves off the plateau I have added a notification - this serves no functional purpose 
     (but otherwise the plateau does not have any real use)
     
 ###### Not included
 
-- 100% test coverage: I would usually try for 100% test coverage, however, I have avoided over testing (adding stubs / spies) as 
-I don't think it is needed for the purposes of the challenge.
+- Test coverage: I would usually try for 100% test coverage, however, I have avoided over testing (adding stubs / spies) as 
+I don't think it is needed for the purposes of the challenge. If any type of stubbing were to happen it would be mocking the input values read from the CLI.
 
 - Separation of concerns: Additionally I would usually separate the CLI input utility library 
-into its own module so that the app is agnostic of how data is inputted, 
+into its own module so that the app is agnostic of how data is recieved, 
 however, again I don't think this is completely necessary for the purposes of the challenge.
 
 - Error Handling: For the purposes of this challenge I assume that all user input is uncorrupted, as it was not
-specified otherwise. Any malformed inputted data will cause the CLI to break.
+specified otherwise. Any malformed data will cause the CLI to break.
