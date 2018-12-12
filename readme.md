@@ -4,7 +4,7 @@ https://code.google.com/archive/p/marsrovertechchallenge/
 
 #### Installation:
 
-- Make sure Node (npm) is installed (preferably the latest version)
+- Make sure Node (npm) is installed (at least v11.4.0 for https://nodejs.org/api/readline.html)
 - Run `npm install` to install all the dependencies
 
 - Run CLI with `npm run start`
